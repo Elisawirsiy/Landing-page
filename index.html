@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crocheting</title>
+    <style>
+      .container {
+        padding: 0px;
+        margin: 0px auto;
+        max-width: 50%;
+        height: 100%;
+        display: block;
+      }
+      body {
+        background-image: linear-gradient(to left, #a521ba, #b99bc8);
+        margin: 50px auto;
+        width: 50%;
+      }
+      .hobby {
+        display: block;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 48px;
+        font-weight: bolder;
+        line-height: 55px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 30px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 20px;
+        text-align: center;
+      }
+
+      img {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+      }
+      .procedure {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0px auto 15px;
+        text-align: center;
+        margin: 10px auto;
+      }
+      h3 {
+        padding: 0px auto;
+        margin: auto;
+      }
+
+      ul {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        list-style-type: none;
+        padding: 0px;
+      }
+
+      .read-more {
+        color: blue;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+      .read-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 0.7;
+      }
+      button {
+        background: #ae9bc5;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: black;
+        display: block;
+        font-size: 16px;
+        margin: 50px auto;
+        padding: 15px 20px;
+        transition: all 250ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+      }
+      .coder {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="hobby">
+        <h1>Crocheting!</h1>
+        <h2>The creativity is endless👌</h2>
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/844/original/CrochetStitchPatterns-5bce2263c9e77c00513ffbb7.jpg?1620818506"
+          alt="crochetPatterns"
+          width="500px"
+        />
+
+        <div class="procedure">
+          <p>
+            <strong>Crochet</strong> is a process of creating textiles by using
+            a crochet hook to interlock loops of yarn, thread, or strands of
+            other materials. The name is derived from the French term
+            <em>crochet</em>, meaning 'small hook'. Hooks can be made from a
+            variety of materials, such as metal, wood, bamboo, or plastic. The
+            key difference between crochet and knitting, beyond the implements
+            used for their production, is that each stitch in crochet is
+            completed before the next one is begun, while knitting keeps many
+            stitches open at a time.
+          </p>
+        </div>
+        <h3>Types of stitches</h3>
+        <ul>
+          <li>
+            <em><strong>Chain stitch:</strong></em> basic stitch used to begin
+            most projects
+          </li>
+          <li>
+            <em><strong>Slip stitch:</strong></em> used to join chain stitch to
+            form a ring
+          </li>
+          <li>
+            <em><strong>Single crochet stitch:</strong></em> easiest stitch to
+            master
+          </li>
+          <li>
+            <em><strong>Half-double crochet stitch:</strong></em> the
+            'in-between' stitch
+          </li>
+          <li>
+            <em><strong>Double crochet stitch:</strong></em> yarn over once -
+            has unlimited uses
+          </li>
+          <li>
+            <em><strong>Treble crochet stitch:</strong></em> yarn over twice
+          </li>
+        </ul>
+        <a
+          href="https://en.wikipedia.org/wiki/Crochet"
+          target="_blank"
+          class="read-more"
+        >
+          Read more on Wikipedia</a
+        >
+        <p><button>Learn to Crochet🧶</button></p>
+        <p class="footer">
+          This page was built by <span class="coder">Elizabeth Wirsiy</span>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function signUp() {
+        let interest = prompt("Are you interested in crocheting?");
+        interest = interest.toLowerCase();
+        interest = interest.trim();
+
+        if (interest !== "yes") {
+          alert("Oh well, learn something else!");
+        } else {
+          let name = prompt("What is your first name?");
+          let email = prompt("What is your email");
+          alert(
+            "Yay!! Get your yarn and crochet hook ready " +
+              name +
+              "😃 We'll be in touch by email"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
