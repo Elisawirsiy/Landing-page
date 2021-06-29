@@ -6,21 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crocheting</title>
     <style>
-      .container {
-        padding: 0px;
-        margin: 0px auto;
-        max-width: 50%;
-        height: 100%;
-        display: block;
-      }
       body {
         background-image: linear-gradient(to left, #a521ba, #b99bc8);
         margin: 50px auto;
-        width: 50%;
       }
       .hobby {
         display: block;
         text-align: center;
+        padding: 0px;
+        margin: 0px auto;
+        max-width: 50%;
       }
 
       h1 {
@@ -33,7 +28,7 @@
 
       h2 {
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        font-size: 30px;
+        font-size: 32px;
         margin: 0 auto;
         overflow: hidden;
         padding: 20px;
@@ -44,13 +39,14 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
         display: block;
+        text-align: center;
         margin: auto;
       }
 
       .procedure {
         display: block;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 26px;
         padding: 0px auto 15px;
         text-align: center;
         margin: 10px auto;
@@ -63,24 +59,25 @@
       ul {
         display: block;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 26px;
         list-style-type: none;
         padding: 0px;
       }
 
-      .read-more {
+      .external-link {
         color: blue;
         text-decoration: none;
         transition: all 200ms ease-in-out;
       }
-      .read-more:hover {
+      .external-link:hover {
         text-decoration: underline;
       }
       .footer {
-        font-size: 12px;
+        font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         opacity: 0.7;
       }
+
       button {
         background: #ae9bc5;
         border: 1px solid blueviolet;
@@ -99,19 +96,27 @@
         color: white;
         cursor: pointer;
       }
-      .coder {
-        color: blue;
-      }
+
       @media (max-width: 700px) {
         img {
-          width: 200px;
+          width: 300px;
           margin: 0;
         }
         h1 {
           font-size: 42px;
         }
         h2 {
-          font-size: 26px;
+          font-size: 22px;
+        }
+        .hobby {
+          max-width: 85%;
+        }
+        p {
+          font-size: 16px;
+        }
+        h3,
+        ul {
+          display: none;
         }
       }
     </style>
@@ -121,13 +126,13 @@
       <div class="hobby">
         <h1>Crocheting!</h1>
         <h2>The creativity is endless👌</h2>
-
+        <hr />
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/844/original/CrochetStitchPatterns-5bce2263c9e77c00513ffbb7.jpg?1620818506"
           alt="crochetPatterns"
-          width="500px"
+          width="600px"
         />
-
+        <hr />
         <div class="procedure">
           <p>
             <strong>Crochet</strong> is a process of creating textiles by using
@@ -170,17 +175,17 @@
         <a
           href="https://en.wikipedia.org/wiki/Crochet"
           target="_blank"
-          class="read-more"
+          class="external-link"
         >
           Read more on Wikipedia</a
         >
         <p><button>Learn to Crochet🧶</button></p>
         <p class="footer">
-          This page was built by <span class="coder">Elizabeth Wirsiy</span>
+          This page was built by
+          <a href="#" class="external-link">Elizabeth Wirsiy</a>
         </p>
       </div>
     </div>
-
     <script>
       function signUp() {
         let interest = prompt("Are you interested in crocheting?");
